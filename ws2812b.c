@@ -305,6 +305,8 @@ const static uint8_t ws2812b_color_shift_map[256][4] =
 static void default_fx(uint32_t led_idx, ws2812b_color_t *color, void *param)
 {
     (void) led_idx;
+    (void) param;
+
     color->ch.r = 0x00;
     color->ch.g = 0x00;
     color->ch.b = 0x00;
